@@ -1,0 +1,42 @@
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.menu {
+    padding: 50px 0 0 50px;
+    display: flex;
+    flex-direction: row;
+}
+.button {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+.button:first-child {
+    margin-right: 30px;
+}
+.footer_menu {
+    padding: 0 50px 50px 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.image {
+    background-image: url(image/silver.jpg);
+    background-size: cover;
+}
+@media (max-width: 800px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .button:first-child {
+        margin-bottom: 20px;
+    }
+}
